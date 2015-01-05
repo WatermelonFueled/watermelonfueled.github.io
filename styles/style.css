@@ -13,7 +13,7 @@ html, body {
 	display: inline-block;
 	position: fixed;
 	top: 0;
-	bottom: 4em;
+	bottom: 5.5em;
 	left: 0;
 	right: 0;
 	width: 38em;
@@ -29,13 +29,13 @@ html, body {
 h3 {
 	font-family: 'Dosis', Arial, sans-serif;
 	font-size: 140%;
-	padding-top: 2.2em;
+	padding-top: 6.3em;
 }
 
 /*------------ Footer ----------*/
 footer {
 	width: 100%;
-	height: 4.0em;
+	height: 3.8em;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -44,7 +44,7 @@ footer {
 	text-align: center;
 	color: #BABABA;
 	font-family: 'Dosis',sans-serif;
-	font-size: 1.1em;
+	font-size: 1.0em;
 }
 
 .foot_element {
