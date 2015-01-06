@@ -27,15 +27,15 @@ html, body {
 }
 
 h3 {
-	font-family: 'Dosis', Arial, sans-serif;
-	font-size: 140%;
-	padding-top: 2.2em;
+	font-family: 'Dosis', Trebuchet MS, sans-serif;
+	font-size: 120%;
+	padding-top: 2.7em;
 }
 
 /*------------ Footer ----------*/
 footer {
 	width: 100%;
-	height: 4.0em;
+	height: 3.0em;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -43,33 +43,46 @@ footer {
 	background: #22201F;
 	text-align: center;
 	color: #BABABA;
-	font-family: 'Dosis',sans-serif;
-	font-size: 1.1em;
+	padding-top:0.6em;
 }
 
 .foot_element {
 	text-decoration: none;
 	margin: 0.5em;
-	color: #BABABA;
+	color: white;
+	font-family: 'Dosis',  Trebuchet MS, sans-serif;
+	font-size: 1.1em;
+	text-shadow: black 0.1em 0.1em 0.1em, black 0 0 0.4em;
+
 }
 
 #foot_name {
+	letter-spacing: 0.25em;
 	font-weight: bold;
-	color: white;
-	word-spacing: 0.3em;
-	letter-spacing: 0.2em;
 	margin: 1.3em;
-	text-decoration: none;
+}
+
+#foot_twitter {
+	background-image: url("../media/Twitter_logo_blue.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#foot_facebook {
+	background-image: url("../media/FB-f-Logo__blue_29.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 #at_sign {
-	font-size: 145%;
+	font-size: 140%;
 }
 
 
 a:hover {
-	color: #DFDFDF;
-	text-shadow: white 0 0 0.5em;
+	text-shadow: #FF7F00 0 0 0.5em, black 0.1em 0.1em 0.1em;
 }
 
 a:active {
