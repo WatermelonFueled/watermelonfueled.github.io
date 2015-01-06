@@ -27,25 +27,15 @@ html, body {
 }
 
 h3 {
-<<<<<<< HEAD
 	font-family: 'Dosis', Trebuchet MS, sans-serif;
 	font-size: 120%;
 	padding-top: 2.7em;
-=======
-	font-family: 'Dosis', Arial, sans-serif;
-	font-size: 140%;
-	padding-top: 6.3em;
->>>>>>> origin/master
 }
 
 /*------------ Footer ----------*/
 footer {
 	width: 100%;
-<<<<<<< HEAD
-	height: 3.0em;
-=======
-	height: 3.8em;
->>>>>>> origin/master
+	height: 2.9em;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -53,20 +43,16 @@ footer {
 	background: #22201F;
 	text-align: center;
 	color: #BABABA;
-<<<<<<< HEAD
 	padding-top:0.6em;
-=======
-	font-family: 'Dosis',sans-serif;
 	font-size: 1.0em;
->>>>>>> origin/master
 }
 
 .foot_element {
 	text-decoration: none;
 	margin: 0.5em;
 	color: white;
-	font-family: 'Dosis',  Trebuchet MS, sans-serif;
-	font-size: 1.1em;
+	font-family: 'Dosis', Trebuchet MS, sans-serif;
+	font-size: 1.0em;
 	text-shadow: black 0.1em 0.1em 0.1em, black 0 0 0.4em;
 
 }
@@ -97,7 +83,7 @@ footer {
 
 
 a:hover {
-	text-shadow: #FF7F00 0 0 0.5em, black 0.1em 0.1em 0.1em;
+	text-shadow: #FF5F00 0 0 0.5em, black 0.1em 0.1em 0.1em;
 }
 
 a:active {
