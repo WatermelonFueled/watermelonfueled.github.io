@@ -13,7 +13,7 @@ html, body {
 	display: inline-block;
 	position: fixed;
 	top: 0;
-	bottom: 4em;
+	bottom: 5.5em;
 	left: 0;
 	right: 0;
 	width: 38em;
@@ -27,15 +27,25 @@ html, body {
 }
 
 h3 {
+<<<<<<< HEAD
 	font-family: 'Dosis', Trebuchet MS, sans-serif;
 	font-size: 120%;
 	padding-top: 2.7em;
+=======
+	font-family: 'Dosis', Arial, sans-serif;
+	font-size: 140%;
+	padding-top: 6.3em;
+>>>>>>> origin/master
 }
 
 /*------------ Footer ----------*/
 footer {
 	width: 100%;
+<<<<<<< HEAD
 	height: 3.0em;
+=======
+	height: 3.8em;
+>>>>>>> origin/master
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -43,7 +53,12 @@ footer {
 	background: #22201F;
 	text-align: center;
 	color: #BABABA;
+<<<<<<< HEAD
 	padding-top:0.6em;
+=======
+	font-family: 'Dosis',sans-serif;
+	font-size: 1.0em;
+>>>>>>> origin/master
 }
 
 .foot_element {
