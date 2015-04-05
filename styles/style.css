@@ -84,7 +84,7 @@ footer {
 }
 
 
-a:hover {
+a:hover, a:focus {
 	text-shadow: #FF5F00 0 0 0.5em, black 0.1em 0.1em 0.1em;
 	opacity: 0.85;
 }
