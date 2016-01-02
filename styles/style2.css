@@ -76,7 +76,7 @@ html body {
   width: 12em;
   height: 12em;
   border-radius: 50%;
-  background-color: #02b267;
+  /*background-color: #02b267;*/
     outline: dashed 3px black;
   -webkit-animation: roll 2s;
   -moz-animation: roll 2s;
@@ -101,9 +101,11 @@ html body {
 }
 
 
-#watermelon-pattern {
+#watermelon-front {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  background-color: #02b267;
   outline: dotted 1px red;
 }
 
