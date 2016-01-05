@@ -18,25 +18,25 @@ html body {
   margin-top: -1em;
   padding: 0;
   width: 100%;
-  outline: dotted 2px green;
-  -webkit-animation: slide 2s;
-  -moz-animation: slide 2s;
-  -o-animation: slide 2s;
-  animation: slide 2s;
+  height: 100%;
+  -webkit-animation: slide 1.5s;
+  -moz-animation: slide 1.5s;
+  -o-animation: slide 1.5s;
+  animation: slide 1.5s;
 }
 #intro {
   position: relative;
-  margin-top: -20em;
+  margin-top: 10em;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
   height: 12em;
   width: 12em;
-  outline: dotted 2px red;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  animation: fadeIn 2s;
+  z-index: 1;
+  -webkit-animation: fadeIn 1.5s;
+  -moz-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
 }
 @-webkit-keyframes slide {
   0% { width: 50%; }
@@ -71,17 +71,18 @@ html body {
   100% { opacity: 1; }
 }
 
+.introAnimation {
+  position: absolute;
+}
+
 #watermelon {
-  margin: 500px auto;
   width: 12em;
   height: 12em;
   border-radius: 50%;
-  /*background-color: #02b267;*/
-    outline: dashed 3px black;
-  -webkit-animation: roll 2s;
-  -moz-animation: roll 2s;
-  -o-animation: roll 2s;
-  animation: roll 2s;
+  -webkit-animation: roll 1.5s;
+  -moz-animation: roll 1.5s;
+  -o-animation: roll 1.5s;
+  animation: roll 1.5s;
 }
 @-webkit-keyframes roll {
   0% { -webkit-transform: rotate(180deg); }
@@ -105,24 +106,121 @@ html body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #02b267;
-  outline: dotted 1px red;
+  background-image: url("../media/watermelonoutside3.png");
+  background-size: contain;
+  z-index: 5;
+}
+#watermelon-front.introAnimate {
+  -webkit-animation: frontFall 0.8s ease-in 1.9s;
+  -moz-animation: frontFall 0.8s ease-in 1.9s;
+  -o-animation: frontFall 0.8s ease-in 1.9s;
+  animation: frontFall 0.8s ease-in 1.9s;
+}
+
+@-webkit-keyframes frontFall {
+  0% { top: 0em; opacity: 1; transform: rotate(0deg) scale(1); }
+  100% { top: 13em; opacity: 0; transform: rotate(45deg) scale(1.1); }
+}
+@-moz-keyframes frontFall {
+  0% { top: 0em; opacity: 1; transform: rotate(0deg) scale(1); }
+  100% { top: 13em; opacity: 0; transform: rotate(45deg) scale(1.1); }
+}
+@-o-keyframes frontFall {
+  0% { top: 0em; opacity: 1; transform: rotate(0deg) scale(1); }
+  100% { top: 13em; opacity: 0; transform: rotate(45deg) scale(1.1); }
+}
+@keyframes frontFall {
+  0% { top: 0em; opacity: 1; transform: rotate(0deg) scale(1); }
+  100% { top: 13em; opacity: 0; transform: rotate(45deg) scale(1.2); }
+}
+
+#watermelon-top {
+  width: 100%;
+  height: 50%;
+  background-image: url("../media/watermeloninside2.png");
+  background-size: cover;
+  z-index: 2;
+}
+#watermelon-top.introAnimate {
+  -webkit-animation: topFall 0.8s linear 3.6s;
+  -moz-animation: topFall 0.8s linear 3.6s;
+  -o-animation: topFall 0.8s linear 3.6s;
+  animation: topFall 0.8s linear 3.6s;
+}
+@-webkit-keyframes topFall {
+  0% { top: 0em; transform: scale(1); opacity: 1; }
+  20% { transform: scale(0.85); }
+  100% { top: 7em; transform: rotate(30deg) scale(0.8); opacity: 0; }
+}
+@-moz-keyframes topFall {
+  0% { top: 0em; transform: scale(1); opacity: 1; }
+  20% { transform: scale(0.85); }
+  100% { top: 7em; transform: rotate(30deg) scale(0.8); opacity: 0; }
+}
+@-o-keyframes topFall {
+  0% { top: 0em; transform: scale(1); opacity: 1; }
+  20% { transform: scale(0.85); }
+  100% { top: 7em; transform: rotate(30deg) scale(0.8); opacity: 0; }
+}
+@keyframes topFall {
+  0% { top: 0em; transform: scale(1); opacity: 1; }
+  20% { transform: scale(0.85); }
+  100% { top: 7em; transform: rotate(30deg) scale(0.8); opacity: 0; }
+}
+
+#watermelon-bottom {
+  top: 6em;
+  width: 100%;
+  height: 50%;
+  z-index: 3;
+  background-image: url("../media/watermeloninside2.png");
+  background-size: cover;
+  background-position: bottom;
+}
+#watermelon-bottom.introAnimate {
+  -webkit-animation: bottomRise 1.7s ease-in-out 4.5s;
+  -moz-animation: bottomRise 1.7s ease-in-out 4.5s;
+  -o-animation: bottomRise 1.7s ease-in-out 4.5s;
+  animation: bottomRise 1.7s ease-in-out 4.5s;
+}
+@-webkit-keyframes bottomRise {
+  0% { top: 6em; }
+  65% { top: -10em; opacity: 1;}
+  100% { top: -10em; opacity: 0; }
+}
+@-moz-keyframes bottomRise {
+  0% { top: 6em; }
+  65% { top: -10em; opacity: 1;}
+  100% { top: -10em; opacity: 0; }
+}
+@-o-keyframes bottomRise {
+  0% { top: 6em; }
+  65% { top: -10em; opacity: 1;}
+  100% { top: -10em; opacity: 0; }
+}
+@keyframes bottomRise {
+  0% { top: 6em; }
+  65% { top: -10em; opacity: 1;}
+  100% { top: -10em; opacity: 0; }
 }
 
 #knife {
-  position: absolute;
   top: 13em;
   left: 14em;
   width: 11em;
   height: 1.5em;
   opacity: 0;
+  z-index: 4;
+}
+#knife.introAnimate {
   -webkit-animation: knifeCut 4s;
   -moz-animation: knifeCut 4s;
   -o-animation: knifeCut 4s;
   animation: knifeCut 4s;
 }
+
 @-webkit-keyframes knifeCut {
-  0% { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); width: 11em; height: 1.5em;}
   2% { opacity: 1; }
   10% { transform: rotate(20deg); }
   30% { transform: rotate(760deg); left: 12em; }
@@ -130,13 +228,13 @@ html body {
   40% { top: 0em; transform: rotate(766deg); }
   50% { top: 11em; transform: rotate(720deg); left: 5.5em; }
   58% { top: 11em; transform: rotate(720deg); width: 11em; height: 1.5em; left: 12em; }
-  78% { top: 5.5em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
+  78% { top: 5.3em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
   84% { width: 13em; height: 1.8em; left: 4.5em; }
   90% { opacity: 1; width: 8em; height: 1.2em; left: 5em; }
-  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.5em; transform: rotateX(75deg); }
+  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.3em; transform: rotateX(75deg); }
 }
 @-moz-keyframes knifeCut {
-  0% { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); width: 11em; height: 1.5em;}
   2% { opacity: 1; }
   10% { transform: rotate(20deg); }
   30% { transform: rotate(760deg); left: 12em; }
@@ -144,13 +242,13 @@ html body {
   40% { top: 0em; transform: rotate(766deg); }
   50% { top: 11em; transform: rotate(720deg); left: 5.5em; }
   58% { top: 11em; transform: rotate(720deg); width: 11em; height: 1.5em; left: 12em; }
-  78% { top: 5.5em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
+  78% { top: 5.3em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
   84% { width: 13em; height: 1.8em; left: 4.5em; }
   90% { opacity: 1; width: 8em; height: 1.2em; left: 5em; }
-  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.5em; transform: rotateX(75deg); }
+  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.3em; transform: rotateX(75deg); }
 }
 @-o-keyframes knifeCut {
-  0% { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); width: 11em; height: 1.5em;}
   2% { opacity: 1; }
   10% { transform: rotate(20deg); }
   30% { transform: rotate(760deg); left: 12em; }
@@ -158,13 +256,13 @@ html body {
   40% { top: 0em; transform: rotate(766deg); }
   50% { top: 11em; transform: rotate(720deg); left: 5.5em; }
   58% { top: 11em; transform: rotate(720deg); width: 11em; height: 1.5em; left: 12em; }
-  78% { top: 5.5em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
+  78% { top: 5.3em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
   84% { width: 13em; height: 1.8em; left: 4.5em; }
   90% { opacity: 1; width: 8em; height: 1.2em; left: 5em; }
-  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.5em; transform: rotateX(75deg); }
+  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.3em; transform: rotateX(75deg); }
 }
 @keyframes knifeCut {
-  0% { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); width: 11em; height: 1.5em;}
   2% { opacity: 1; }
   10% { transform: rotate(20deg); }
   30% { transform: rotate(760deg); left: 12em; }
@@ -172,10 +270,10 @@ html body {
   40% { top: 0em; transform: rotate(766deg); }
   50% { top: 11em; transform: rotate(720deg); left: 5.5em; }
   58% { top: 11em; transform: rotate(720deg); width: 11em; height: 1.5em; left: 12em; }
-  78% { top: 5.5em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
+  78% { top: 5.3em; transform: rotateX(75deg); width: 13em; height: 1.8em; }
   84% { width: 13em; height: 1.8em; left: 4.5em; }
   90% { opacity: 1; width: 8em; height: 1.2em; left: 5em; }
-  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.5em; transform: rotateX(75deg); }
+  100% { opacity: 0; width: 9em; height: 1.2em; top: 5.3em; transform: rotateX(75deg); }
 }
 
 /*//////////////////////////// HEADER //////////////////////////////*/
