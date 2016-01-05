@@ -11,11 +11,11 @@ html body {
 }
 
 .hidden { display: none; }
+.transparent { opacity: 0; }
 
 /*///////////////////////////// INTRO /////////////////////////////*/
 #intro-wrapper {
   position: fixed;
-  margin-top: -1em;
   padding: 0;
   width: 100%;
   height: 100%;
@@ -71,9 +71,7 @@ html body {
   100% { opacity: 1; }
 }
 
-.introAnimation {
-  position: absolute;
-}
+.introAnimation { position: absolute; }
 
 #watermelon {
   width: 12em;
@@ -101,7 +99,6 @@ html body {
   100% { transform: rotate(360deg); }
 }
 
-
 #watermelon-front {
   width: 100%;
   height: 100%;
@@ -116,7 +113,6 @@ html body {
   -o-animation: frontFall 0.8s ease-in 1.9s;
   animation: frontFall 0.8s ease-in 1.9s;
 }
-
 @-webkit-keyframes frontFall {
   0% { top: 0em; opacity: 1; transform: rotate(0deg) scale(1); }
   100% { top: 13em; opacity: 0; transform: rotate(45deg) scale(1.1); }
@@ -218,7 +214,6 @@ html body {
   -o-animation: knifeCut 4s;
   animation: knifeCut 4s;
 }
-
 @-webkit-keyframes knifeCut {
   0% { transform: rotate(0deg); width: 11em; height: 1.5em;}
   2% { opacity: 1; }
@@ -277,7 +272,10 @@ html body {
 }
 
 /*//////////////////////////// HEADER //////////////////////////////*/
-header { position: fixed; padding: 0; width: 100%; margin-top: -1em;}
+header { position: fixed; padding: 0; width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s 1.2s;
+}
 
 .main-menu {
   position: relative;
@@ -359,4 +357,11 @@ header { position: fixed; padding: 0; width: 100%; margin-top: -1em;}
   height: 88%;
   border-radius: 50%;
   background-color: #ff5436;
+}
+
+
+/*////////////////////////// FOOTER //////////////////////////////*/
+footer {
+  position: fixed;
+  bottom: 0;
 }

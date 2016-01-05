@@ -11,8 +11,12 @@ $(document).ready(function() {
         $(this).addClass('hidden');
       });
     });
+    $('#watermelon-bottom').one("animationstart webkitAnimationStart mozAnimationStart oAnimationStart", function() {
+      $('header').removeClass('transparent');
+    });
     $('#watermelon-bottom').one("animationend webkitAnimationEnd mozAnimationEnd oAnimationEnd", function() {
       $('#intro-wrapper').addClass('hidden');
+      $('footer').removeClass('transparent');
     });
   });
 
